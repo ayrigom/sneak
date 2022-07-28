@@ -263,9 +263,9 @@ for /l %%. in (1 0 1) do (
       %draw%
 
     ) || (
-      cd "%userprofile%\GOMES\sneak"
-      start /min sndrec32 /play /close "au.wav"
       %=== failed move - game over ===%
+      cd "%userprofile%\GOMES\sneak"
+      start /min sndrec32 /play /close "au.wav"      
       %plot% !TX! !TY! body
       call :spinner !PX! !PY! death
       %draw%
